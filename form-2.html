@@ -17,6 +17,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+        <h2>Form 2 - Data Should be passed </h2>
+
         <form id="form">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -30,6 +32,16 @@
           <!-- <script src="" async defer></script> -->
                 <script>
                     
+                    if (sessionStorage.fName.length > 0) {
+                        console.log(sessionStorage.fName)
+                        document.getElementById("fname").value = sessionStorage.fName
+                    }
+
+                    if (sessionStorage.lName.length > 0) {
+                        console.log(sessionStorage.lName)
+                        document.getElementById("lname").value = sessionStorage.lName
+                    }
+
                 </script>
 
         </body>
