@@ -35,18 +35,20 @@
                     if (sessionStorage.fName.length > 0) {
                         console.log(sessionStorage.fName)
                         document.getElementById("fname").value = sessionStorage.fName
-                    }
+                        }
                     }
                     catch(err) {
+                        console.log("Caught Fault")
                         console.log(err)
                     }
                     try {
                     if (sessionStorage.lName.length > 0) {
                         console.log(sessionStorage.lName)
                         document.getElementById("lname").value = sessionStorage.lName
-                    }
+                        }
                     }
                     catch(err) {
+                        console.log("Caught Fault")
                         console.log(err)
                     }
                 </script>
